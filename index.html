@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidování vypité kávy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Evidování vypité kávy</h1>
+
+    <div class="form-container">
+        <form id="coffeeForm">
+            <label>Vyberte osobu:</label>
+            <input type="radio" name="person" value="Masopust Lukáš"> Masopust Lukáš<br>
+            <input type="radio" name="person" value="Molič Jan"> Molič Jan<br>
+            <input type="radio" name="person" value="Adamek Daniel"> Adamek Daniel<br>
+            <input type="radio" name="person" value="Weber David"> Weber David<br><br>
+
+            <label>mleko:</label>
+            <input type="range" id="mleko" name="mleko" min="0" max="10" value="0"><span>0</span><br>
+
+            <label>Espresso:</label>
+            <input type="range" id="espresso" name="espresso" min="0" max="10" value="0"><span>0</span><br>
+
+            <label>Caffe:</label>
+            <input type="range" id="caffe" name="caffe" min="0" max="10" value="0"><span>0</span><br>
+
+            <label>Long:</label>
+            <input type="range" id="long" name="long" min="0" max="10" value="0"><span>0</span><br>
+
+            <label>Doppio:</label>
+            <input type="range" id="doppio" name="doppio" min="0" max="10" value="0"><span>0</span><br><br>
+
+            <button type="button" id="submitButton">Odeslat</button>
+        </form>
+    </div>
+
+    <h2>Celkový přehled</h2>
+    <button id="showReport">Zobrazit celkový přehled</button>
+
+    <h2>Měsíční přehled</h2>
+    <label for="monthSelect">Vyberte měsíc:</label>
+    <select id="monthSelect">
+        <option value="1">Leden</option>
+        <option value="2">Únor</option>
+        <option value="3">Březen</option>
+        <option value="4">Duben</option>
+        <option value="5">Květen</option>
+        <option value="6">Červen</option>
+        <option value="7">Červenec</option>
+        <option value="8">Srpen</option>
+        <option value="9">Září</option>
+        <option value="10">Říjen</option>
+        <option value="11">Listopad</option>
+        <option value="12">Prosinec</option>
+    </select>
+    <button id="filterByMonth">Zobrazit přehled za měsíc</button>
+
+    <div id="report"></div>
+
+    <script src="coffee.js"></script>
+</body>
+</html>
+
+
+
+
